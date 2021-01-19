@@ -26,7 +26,7 @@ var app=new Vue({
 </div>
 ```
 
-[helloworld.png](https://github.com/1397201241/img/blob/main/helloworld.png)
+![helloworld.png](https://github.com/1397201241/img/blob/main/helloworld.png?raw=true)
 
 v-bind绑定元素属性，例如
 
@@ -48,7 +48,7 @@ var app2=new Vue({
 </div>
 ```
 
-[v-bind.png](https://github.com/1397201241/img/blob/main/v-bind.png)
+![v-bind.png](https://github.com/1397201241/img/blob/main/v-bind.png?raw=true)
 
 #### 条件与循环
 
@@ -83,4 +83,6 @@ var app2=new Vue({
 </div>
 ```
 
-[v-if_v-for.png](https://github.com/1397201241/img/blob/main/v-if_v-for.png)
+)
+
+![v-if_v-for.png](https://github.com/1397201241/img/blob/main/v-if_v-for.png?raw=true)
