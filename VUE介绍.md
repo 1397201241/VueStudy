@@ -28,7 +28,7 @@ var app=new Vue({
 
 ![helloworld.png](https://github.com/1397201241/img/blob/main/helloworld.png?raw=true)
 
-v-bind绑定元素属性，例如
+**v-bind**绑定元素属性，例如
 
 ```javascript
 var app2=new Vue({
@@ -52,7 +52,7 @@ var app2=new Vue({
 
 #### 条件与循环
 
-v-if绑定条件，v-for绑定数组的数据
+**v-if**绑定条件，**v-for**绑定数组的数据
 
 ```javascript
 var app2=new Vue({
@@ -86,3 +86,27 @@ var app2=new Vue({
 )
 
 ![v-if_v-for.png](https://github.com/1397201241/img/blob/main/v-if_v-for.png?raw=true)
+
+#### 处理用户输入
+
+**v-on:click**可以响应用户点击事件
+
+```javascript
+//声明方法
+methods:{
+    reverseMessage:function () {
+        this.message1=this.message1.split('').reverse().join('');
+    }
+}
+```
+
+```html
+<div>
+    <p>{{message1}}</p>
+    <button v-on:click="reverseMessage">
+        反转消息
+    </button>
+</div>
+```
+
+![v-on.png](https://github.com/1397201241/img/blob/main/v-on.png?raw=true)
