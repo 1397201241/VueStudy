@@ -92,7 +92,7 @@ var app2=new Vue({
 **v-on:click**可以响应用户点击事件
 
 ```javascript
-//声明方法
+//声明方法，注意这里是methods
 methods:{
     reverseMessage:function () {
         this.message1=this.message1.split('').reverse().join('');
@@ -110,3 +110,29 @@ methods:{
 ```
 
 ![v-on.png](https://github.com/1397201241/img/blob/main/v-on.png?raw=true)
+
+#### 组件化构建
+
+可以使用Vue.component声明组件
+
+```javascript
+Vue.component('todo-item',{
+    props:['todo'],
+    template:'<li>{{todo.text}}</li>'
+});
+```
+
+引用组件
+
+```html
+<ol>
+    <todo-item
+            v-for="item in todos"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+    >
+    </todo-item>
+</ol>
+```
+
+![component.png](https://github.com/1397201241/img/blob/main/component.png?raw=true)
