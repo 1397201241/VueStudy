@@ -1,11 +1,11 @@
-#### 引入
+### 引入
 
 ```html
 <!--引入VUE-->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 ```
 
-#### 声明式渲染
+### 声明式渲染
 
 vue.js可以声明式得将数据渲染到DOM系统，例如
 
@@ -50,7 +50,7 @@ var app2=new Vue({
 
 ![v-bind.png](https://github.com/1397201241/img/blob/main/v-bind.png?raw=true)
 
-#### 条件与循环
+### 条件与循环
 
 **v-if**绑定条件，**v-for**绑定数组的数据
 
@@ -87,7 +87,7 @@ var app2=new Vue({
 
 ![v-if_v-for.png](https://github.com/1397201241/img/blob/main/v-if_v-for.png?raw=true)
 
-#### 处理用户输入
+### 处理用户输入
 
 **v-on:click**可以响应用户点击事件
 
@@ -111,7 +111,7 @@ methods:{
 
 ![v-on.png](https://github.com/1397201241/img/blob/main/v-on.png?raw=true)
 
-#### 组件化构建
+### 组件化构建
 
 可以使用Vue.component声明组件
 
@@ -136,3 +136,4 @@ Vue.component('todo-item',{
 ```
 
 ![component.png](https://github.com/1397201241/img/blob/main/component.png?raw=true)
+
